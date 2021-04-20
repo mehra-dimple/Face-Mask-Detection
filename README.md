@@ -21,12 +21,18 @@ Though the dataset is pretty imbalanced with most of the data belonging to With 
 
 ## Workflow
 
-1. <style>Data preprocessing :{color: Blue;}</style> All images have their bounding boxes in the PASCAL VOC format and their info saved in XML format in annotaions directory. Only the region bounded by bounding box taken as input and their respective labels taken as output.
+1. Data preprocessing : All images have their bounding boxes in the PASCAL VOC format and their info saved in XML format in annotaions directory. Only the region bounded by bounding box taken as input and their respective labels taken as output.
 
-2. <style>Training mask detector model : {color: Blue;} </style>Transfer learning was used to train the inputs. The classifier model was built with InceptionV3 neural network architecture. After training for 20 epochs, accuracy on test set was 96.81%.
+2. Training mask detector model : Transfer learning was used to train the inputs. The classifier model was built with InceptionV3 neural network architecture. After training for 20 epochs, accuracy on test set was 96.81%.
 
-3. <style>Detecting face mask in real-time : {color: Blue;} </style>First task was to detect faces from each frame of the video. At first I used Haarcascade classifer from OpenCV for face detection. Average FPS I got while running on my machine was around 16. But face detection wasn't that accurate. This classifer struggled detecting faces with mask. In low-light condition it struggled the most.
+3. Detecting face mask in real-time :First task was to detect faces from each frame of the video. At first I used Haarcascade classifer from OpenCV for face detection. Average FPS I got while running on my machine was around 16. But face detection wasn't that accurate. This classifer struggled detecting faces with mask. In low-light condition it struggled the most.
 Then I tried MTCNN for face detection. This algorithm performed great detecting faces, even in the low light. But while running on my machine, the average FPS I got was about 1.4. Which is pretty slow comparing with haarcascade classifier.
 
 ## Results
+
+**Input**
+<img src="./Images/result.png">
+
+**Output**
+<img src="./Images/result1.png">
 
