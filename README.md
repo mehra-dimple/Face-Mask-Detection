@@ -31,7 +31,7 @@ Then I tried MTCNN for face detection. This algorithm performed great detecting 
 ## Results
 
 **Input**
-<img src="./Images/results.png">
+<img src="./Images/results.jpg">
 
 **Output**
 <img src="./Images/result1.png">
