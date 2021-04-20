@@ -9,6 +9,8 @@ The detection steps looks somewhat like this:
 ## Dataset
 The dataset used to train the face-mask detection model taken from here.
 
+https://www.kaggle.com/andrewmvd/face-mask-detection
+
 This dataset contains 853 images belonging to the 3 classes, as well as their bounding boxes in the PASCAL VOC format. The classes are:
 
 1. With mask
